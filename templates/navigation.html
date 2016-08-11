@@ -1,0 +1,21 @@
+{% include "header.html" %}
+
+{% block content %}
+{% include "navbar.html" %}
+<div class="container">
+  <div class="starter-template">
+    <div class="page-header">
+      <h2>오시는 길</h2>
+    </div>
+    <div class="mymap" align="center">
+        {{mymap.html}}
+    </div>
+    <h3> 서울시 마포구 와우산로 17길 19-22 </h3>
+
+    <h4> 예약안내 <i class="fa fa-phone" aria-hidden="true"></i> 02-337-9896 </h4>
+    <h4> 영업시간 <i class="fa fa-clock-o" aria-hidden="true"></i> 11:00 ~ 26:00 </h4>
+
+  </div>
+</div>
+{% include "footer.html" %}
+{% endblock %}
