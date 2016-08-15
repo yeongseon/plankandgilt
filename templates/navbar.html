@@ -1,5 +1,5 @@
 {% block navbar %}
-    <nav class="navbar navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -13,23 +13,26 @@
         <div id="navbar" class="navbar-collapse colleage collapse" aria-expanded="false">
           <ul class="nav navbar-nav">
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">소개<span class="caret"></span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About<span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
                 <li><a href="{{ url_for('about1')}}">a</a><li>
                 <li><a href="{{ url_for('about2')}}">b</a><li>
                 <li><a href="{{ url_for('about3')}}">c</a><li>
               </ul>
             </li>
+            <!--
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">메뉴<span class="caret"></span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Menu<span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
                 <li><a href="{{ url_for('menu1')}}">a</a><li>
                 <li><a href="{{ url_for('menu2')}}">b</a><li>
                 <li><a href="{{ url_for('menu3')}}">c</a><li>
               </ul>
             </li>
-            <li><a href="{{ url_for('gallery')}}">갤러리</a><li>
-            <li><a href="{{ url_for('navigation')}}">찾아오는 길</a><li>
+            -->
+            <li><a href="{{ url_for('menu1')}}">Menu</a><li>
+            <li><a href="{{ url_for('gallery')}}">Gallery</a><li>
+            <li><a href="{{ url_for('navigation')}}">Location</a><li>
           </ul>
         </div>
       </div>
